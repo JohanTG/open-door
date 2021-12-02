@@ -11,9 +11,14 @@ package-lock.json
 logs
 *.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
 
 # Temporary files
 temp
@@ -35,12 +40,10 @@ coverage
 *.launch
 .settings/
 *.sublime-workspace
+
+# IDE - VSCode
 .vscode/*
-
-# OS metadata
-.DS_Store
-Thumbs.db
-
-# ignore lock file
-yarn.lock
-package-lock.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json 
